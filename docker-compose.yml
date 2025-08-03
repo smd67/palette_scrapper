@@ -1,0 +1,11 @@
+
+services:
+  palette-scraper-frontend: # Name of the frontend service
+    build: frontend/palette-scraper
+    ports: 
+      - "10001:80"
+    
+  palette-scraper-backend: # Name of the backend service
+    build: backend
+    ports:
+      - "8001:8000"
